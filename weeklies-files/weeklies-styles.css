@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Calligraffitti&family=EB+Garamond&family=IM+Fell+English&family=Lumanosimo&display=swap');
+
+/* Clear out the styling settings */
+/* The "*" character means "All" so it changes the style for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* Use # to delcare an ID */
+
+  /* Creating classes: use . to declare a class*/
+
+  .container{
+
+    /* Add a centered style to container class */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    /* Adjust size of container element */
+    width: 500px;
+    height: 500px;
+
+    /* Create an outline box around the element */
+    outline: solid 5px black;
+    /* outline: dotted 1px rgba(R, G, B, Transparency) 
+     * where RGB parameters are 0-255
+     * transparency is a float between 0 and 1 
+     * Hex codes can also be used instead of rgb() (#AF7CE6)*/
+  }
+
+/* Styling the h2 tag for only the container element */
+.container h2 {
+    /* Add padding between content and border */
+    /* Padding can take 4 parameters: padding: top right bottom left
+     * padding: 25px 20px 15px 10px */
+    padding: 25px;
+
+    /* Color element only applies to text */
+    color: gold;
+  }
+
+.teal-box{
+    position: relative;
+    margin: 10px auto;
+    width: 300px;
+    height: 300px;
+
+    background-color: teal;
+}
+
+.red-box{
+    position: absolute;
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+
+    /* Position element 50 pixels away from top and left of parent element */
+    top: 50px;
+    left: 50px;
+
+    background-color: red;
+}
+
+body {
+    /* You can upload your own font family
+     *  - download it from outside source like Adobe
+     *  - use the <link href=""> tag to load font from web host
+     *  - Then use font-family: (my font) command
+     *
+     * The order of fonts is what is used,
+     * -  if the user doesn't have the first font, then the next font is displayed
+     * 
+     */
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+}
+
+.reflection{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    
+    position: fixed;
+    margin: 10px;
+
+    padding: 25px;
+    
+
+
+    /* Adjust size of container element */
+    width: 700px;
+    height: 95vh;
+
+
+    outline: solid 5px black;
+
+    background-color: rgb(255, 255, 205);
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    font-family: 'EB Garamond', Arial, monospace;
+    font-size: 10px;
+}
+
+.reflection h1{
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5em;
+    color:darkolivegreen;
+}
+
+.reflection body{
+    text-align:left;
+    color:saddlebrown;
+}
+
+.reflection ul li{
+    position: relative;
+    left: 20px;
+}
+
+.color-box {
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: #ff0000;
+    display: inline-block;
+}
+
+.code-box{
+    padding: 10 px;
+    margin: 10px relative;
+    position: absolute;
+    margin: 10px;
+    font-size: .8em;
+
+    width: 500px;
+
+    background-color: rgb(240, 240, 240);
+    outline: dashed 2px black;
+
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.code-box div{
+    padding: 10 px;
+    margin: 20px;
+    position: relative;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+.reflection-3-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: inherit;
+    color: inherit;
+    font:inherit;
+    text-align: left;
+    padding: 20px;
+    outline: double 5px black;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 50%;
+    height: 50%;
+}
+
+
+
+

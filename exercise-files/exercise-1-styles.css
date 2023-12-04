@@ -1,0 +1,378 @@
+/* Import Fonts:
+ * font-family: 'EB Garamond', serif;    
+ * font-family: 'Bungee Spice', cursive;
+ * font-family: 'Lumanosimo', cursive;
+ * font-family: 'IM Fell English', serif;
+ * font-family: 'Calligraffitti', cursive; */
+ @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Calligraffitti&family=EB+Garamond&family=IM+Fell+English&family=Lumanosimo&display=swap');
+
+
+/* Clear out the styling settings */
+/* The "*" character means "All" so it changes the style for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Default Font */
+    font-family: 'EB Garamond', Arial, monospace;
+    color:black;
+    font-size: 12px;
+
+  }
+
+  /* Change the style of links to look like all other text*/
+  a:link, a:visited {
+    color: inherit;
+    font: inherit;
+    text-decoration: none; 
+  }
+  
+  /* Use # to delcare an ID */
+  
+  /* Creating classes: use . to declare a class*/
+
+  .center-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: inherit;
+    color: inherit;
+    font:inherit;
+    font-size: 5em;
+    text-align: center;
+
+    /* optional outline */
+    padding: 20px;
+    outline: double 5px black;
+  }
+
+  /* Container for 9 element table with auto-adjusted size */
+  .nine-cell-table{
+    display: flex;              /* flexible box style */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nine-cell-table table{
+    border-collapse: collapse;  /* remove borders of elements */
+  }
+
+  .nine-cell-table td{
+
+    width: calc(100vw / 3);     /* element width  1/3 viewport width  */
+    height: calc(100vh / 3);    /* element height 1/3 viewport height */
+    text-align: center;
+  }
+
+  .nine-cell-box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+  }
+
+  .reflect-x{
+    transform: scaleX(-1);
+    font-size: inherit;
+  }
+
+  .tiger-char{
+    font-size: 100px;
+  }
+
+  .two-cell-table{
+    display: flex;              /* flexible box style */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .two-cell-table table{
+    border-collapse: collapse;  /* remove borders of elements */
+  }
+
+  .two-cell-table td{
+    width: calc(100vw / 2);     /* element width  1/2 viewport width  */
+    height: 100vh;
+    text-align: center;
+  }
+
+  .reflection-cell-left{
+    position: relative;
+    font-size: 1.5em;
+    top: 50%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transform: translate(0%, -40%);
+    text-align: left;
+    justify-content: right;
+  }
+
+  .reflection-cell-right{
+    position: relative;
+    font-size: 1.5em;
+    top: 50%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transform: translate(0%, -40%);
+    text-align: left;
+    justify-content: left;
+  }
+
+  .color-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .color-page pre{
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  .icon-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #FD6A00;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .icon-page .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: inherit;
+    color: inherit;
+    font:inherit;
+    font-size: 12px;
+    text-align: left;
+
+    /* optional outline */
+    padding: 20px;
+  }
+
+  .icon-page pre{
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  .horizontal-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'IM Fell English', serif;
+    font-size: 15vh;
+    text-align: left;
+
+  }
+
+  .horizontal-box{
+    max-height: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 3vh;
+  }
+
+  .horizontal-page pre{
+    font-family: inherit;
+    font-size: 18vh;
+  }
+
+  .horizontal-page table{
+    height: inherit;
+    font-family: inherit;
+  }
+
+  .horizontal-page td{
+    height: 100%;
+    width: 100vw;
+    font-size: inherit;
+    font-family: 'IM Fell English', serif;
+  }
+
+  .emphasis-box {
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    color: white;
+    font-family: 'Lumanosimo', cursive;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 3vw;
+  }
+  
+  .white{
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+  }
+
+  .blue{
+    font-family: inherit;
+    font-size: inherit;
+    color: rgb(0, 145, 255);
+  }
+
+  .orange{
+    font-family: inherit;
+    font-size: inherit;
+    color: #FD6A00;
+  }
+
+  .gold {
+    font-family: inherit;
+    font-size: inherit;
+    color: #FFDF00;
+  }
+  
+  .emphasize-white {
+    font-size: 1.5em;
+    font-family: inherit;
+    color: white;
+  }
+  .emphasize-blue {
+    font-size: 1.5em;
+    font-family: inherit;
+    color: rgb(0, 145, 255);
+  }
+
+  .emphasize-red {
+    font-size: 1.5em;
+    font-family: inherit;
+    color: rgb(255, 0, 0);
+  }
+
+  .emphasize-gold{
+    font-size: 1.5em;
+    font-family: inherit;
+    color: #FFDF00;
+  }
+
+  .emphasize-orange{
+    font-size: 1.5em;
+    font-family: inherit;
+    color: #FD6A00;
+  }
+
+  
+
+  
+
+
+
+  
+  .container{
+    /* Add a centered style to container class */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+  
+    /* Adjust size of container element */
+    width: 500px;
+    height: 500px;
+  
+    /* Create an outline box around the element */
+    outline: solid 5px black;
+    /* outline: dotted 1px rgba(R, G, B, Transparency) 
+     * where RGB parameters are 0-255
+     * transparency is a float between 0 and 1 
+     * Hex codes can also be used instead of rgb() (#AF7CE6)*/
+  }
+  
+  /* Styling the h2 tag for only the container element */
+  .container h2 {
+    /* Add padding between content and border */
+    /* Padding can take 4 parameters: padding: top right bottom left
+     * padding: 25px 20px 15px 10px */
+    padding: 25px;
+  
+    /* Color element only applies to text */
+    color: gold;
+  }
+  
+  .teal-box{
+    position: relative;
+    margin: 10px auto;
+    width: 300px;
+    height: 300px;
+  
+    background-color: teal;
+  }
+  
+  .red-box{
+    position: absolute;
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+  
+    /* Position element 50 pixels away from top and left of parent element */
+    top: 50px;
+    left: 50px;
+  
+    background-color: red;
+  }
+  
+  .reflection{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    
+    position: relative;
+    margin: 10px;
+  
+    padding: 25px;
+  
+  
+    /* Adjust size of container element */
+    width: 700px;
+  
+    outline: solid 5px black;
+  
+    background-color: rgb(255, 255, 205);
+  
+    font-family: monospace;
+    font-size: 10px;
+  
+  }
+  
+  .reflection h1{
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5em;
+    color:darkolivegreen;
+  }
+  
+  .reflection body{
+    text-align:left;
+    color:saddlebrown;
+  }
+  

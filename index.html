@@ -2,36 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Until I figure out how to make this scale better, scaling is not allowed -->
-    <meta name="viewport" content="width=1920px, height=1080px, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Devin Powell</title>
 </head>
 <body>
 
-    <div class="home-container">
-            <img src="img/home-fg-2.svg" class="fg">
-            <!-- <a href="#Art" class="floating-link" style="font-size: 75px; top: 190px; left: 892px;">Art</a> -->
-            <a href="#Art" class="floating-link" style="font-size: 75px; top: 21%; left: 53%;">Art</a>
-            
-            <!-- <a href="#Projects" class="floating-link" style="font-size: 30px; top: 140px; left: 1225px;">Projects.html</a> -->
-            <a href="#Projects" class="floating-link" style="font-size: 26px; top: 16%; left: 73.4%;">Projects.html</a>
-            
-            <!-- <a href="#Weeklies" class="floating-link" style="font-size: 20px; top: 280px; left: 1448px;">Reflections.html</a> -->
-            <a href="#Weeklies" class="floating-link" style="font-size: 15px; top: 31%; left: 87%;">Reflections.html</a>
-            
-            <!-- <a href="#AboutMe" class="floating-link" style="font-size: 40px; top: 582px; left: 822px;">About</a> -->
-            <a href="#AboutMe" class="floating-link" style="font-size: 40px; top: 64%; left: 49%;">About</a>
-            
-            <!-- <a href="#Contact" class="floating-link" style="font-size: 30px; top: 772px; left: 650px;">Contact</a> -->
-            <a href="#Contact" class="floating-link" style="font-size: 30px; top: 85.4%; left: 38.7%;">Contact</a>
-        
-        <div class="mouse-map-img">
-            <img src="img/gradient_2.png" id="bg-gradient" alt="dynamic background">
-        
-        </div>
-        <script src="script.js"></script>
+    <!-- LOADING CONTAINER: SHOWS SPINNING CIRCLE WHILE BACKGROUND IS LOADING -->
+    <div class="loading-container" id="loadingContainer">
+        <div class="loader"></div>
     </div>
 
+    <!-- BACKGROUND CONTAINER: IMAGE IS LARGE GRADIENT, MAY TAKE A FEW SECONDS TO LOAD-->
+    <div class="mouse-map-img">
+        <img src="img/gradient_2.png" id="bg-gradient">
+    </div>
+
+    <!-- TABLE CONTAINS HOME ELEMENT AT 1440x810 (75% 1920x1080) AND CELLS THAT EXTEND TO FILL REST OF PAGE -->
+    <div class="table-container">
+        <div class="home-container">
+            <img src="img/home-fg-2.svg" class="fg" id="homeContent">
+
+            <a href="https://devin-powell.myportfolio.com/work" class="spinning-link" style="width: 225px; top: 225px; left: 810px;">
+                <img src="img/projects-button.svg" class="spin-ccw">
+            </a>
+
+            <a href="html-js.html" class="spinning-link" style="width: 136px; top: 157px; left: 1110px;">
+                <img src="img/html-button.svg" class="spin-cw">
+            </a>
+
+            <a href="weeklies.html" class="spinning-link" style="width: 96px; top: 270px; left: 1290px">
+                <img src="img/weeklies-button.svg" class="spin-ccw">
+            </a>
+
+            <a href="about.html" class="spinning-link" style="width: 140px; top: 540px; left: 750px;">
+                <img src="img/about-button.svg" class="spin-ccw">
+            </a>
+
+            <a href="https://devin-powell.myportfolio.com/contact" class="spinning-link" style="width: 101px; top: 697px; left: 600px;">
+                <img src="img/contact-button.svg" class="spin-ccw">
+            </a>
+
+            <a href="orcaea-test.html" class="spinning-link" style="width: 98px; top: 112px; left: 572px;">
+                <img src="img/games-button.svg" class="spin-ccw">
+            </a>
+        </div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>

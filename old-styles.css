@@ -1,0 +1,101 @@
+/* Nav Bar Style for unordered list*/
+/*.navbar ul{
+/*    list-style-type: none;                  /* Reset type */
+/*    margin: 0;                              /* Reset type */
+/*    padding: 0;                             /* Push child elements inward */
+/*    overflow: hidden;                       /* Reset type */
+/*    background-color: rgb(221, 160, 221);
+/*    position: fixed;
+/*    top: 0;                                 /* Stick to top of parent object */
+/*    width: 100%;
+
+}
+
+/*
+
+.navbar li {
+    float: left;                 Make elements horizontally aligned to the left 
+}
+
+.navbar li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}*/
+
+/* Pseudo class that is only applied when .active is not present 
+.navbar li a:hover:not(.active) {
+    background-color: rgb(214, 95, 214);
+}*/
+
+/* Active Class for displaying which page we are on currently 
+.navbar li .active {
+    background-color: white;
+    color: rgb(221, 160, 221);
+}*/
+
+/* ---------------------------------------------------------------------------------- */
+/*                            Dropdown Menu (for Nav Bar)                             */
+/* ---------------------------------------------------------------------------------- */
+
+.navbar li .dropdown{
+    float: left;            /* Align formatting */
+    overflow: hidden;       /* Hide overflow content */
+    display: block;
+}
+
+.navbar li .dropdown-btn{
+    font-family: inherit;       /* Inherit elements for sake of specificity */
+    background-color: inherit;
+
+}
+
+.navbar li .dropdown-content{
+    display: none;
+    position: absolute;
+    /* box shadow will be 0px from top, 8px from right, 16px from bottom, 0px from left
+       box shadow has transparency of 20%    */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+
+    /* Z index is value from 0 to 999 and is basically the layer, 0 being the bottom, 999 being the top*/
+    z-index: 5; 
+}
+
+.navbar li .dropdown-content a {
+    float: none;
+    display: block;
+    text-align: center;
+}
+
+/* This styles the dropdown hover feature for .dropdown-content*/
+.dropdown:hover .dropdown-content{
+    /* Display contents used here because it was hidden before */
+    display: contents;
+}
+
+/*  OLD HOME PAGE STYLES    */
+.bg {
+    position: absolute;
+    z-index: 0;
+    width:100vw;
+    height:100vh;
+    object-fit: cover;
+}
+
+.mouse-tracker {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.floating-link {
+    z-index: 2;
+    position: fixed;
+    background-color: transparent;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'EB Garamond', Arial, monospace;
+}
